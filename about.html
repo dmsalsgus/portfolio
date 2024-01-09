@@ -103,7 +103,7 @@
               magna aliqua.
             </p> -->
             <p class="fst-italic"> 
-              나에 대한 짧은 설명 넣기<br>
+              <span style="color: coral; font-weight: bold; font-size: 25px;">"ChatGPT 따위 필요없는 아날로그 개발자 이정은입니다."ㅋ.ㅋ</span><br>
               Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.i laudantium dolores.
               Quisquam sunt adipisci omnis et ut.Quisquam sunt adipisci omnis et ut. 
               <br>
@@ -112,15 +112,16 @@
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-rounded-right"></i> <strong>Name :</strong> Jung Eun Lee</li>
-                  <li><i class="bi bi-rounded-right"></i> <strong>Email : </strong> leeje971118@naver.com</li>
-                  
+                  <li><i class="bi bi-rounded-right"></i> <strong>Name :</strong> 이정은</li>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Email :</strong> leeje971118@naver.com</li>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Address :</strong> 경기도 평택시</li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-rounded-right"></i> <strong>Birthday :</strong> 18 Nov 1997</li>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Birthday :</strong> 1997.11.18</li>
                   <li><i class="bi bi-rounded-right"></i> <strong>Phone :</strong> 010.7236.5003</li>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Major :</strong> 가톨릭대학교 / 컴퓨터정보공학부 / 3.53</li>
                 </ul>
               </div>
             </div>
@@ -214,13 +215,13 @@
         <div class="row counters">
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Clients</p>
+            <span data-purecounter-start="0" data-purecounter-start="0" data-purecounter-duration="1" class="purecounter" id="clientsCounter"></span>
+            <p>Studying</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Projects</p>
+            <span data-purecounter-start="0" data-purecounter-end="237" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Git Commit</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
@@ -275,3 +276,32 @@
 </body>
 
 </html>
+
+<script>
+  // 현재 날짜를 가져오는 함수
+  function getCurrentDate() {
+    return new Date();
+  }
+
+  // 과거 날짜부터 현재까지의 일 수를 업데이트하는 함수
+  function updateClientsCounter() {
+    // 과거 날짜를 현재 날짜 이전으로 설정 (예: 2024년 1월 1일)
+    const startDate = new Date('2016-03-02T00:00:00');
+
+    // 현재 날짜와 과거 날짜 사이의 일 수 차이 계산
+    const timeDiff = getCurrentDate() - startDate;
+    const daysDiff = Math.floor(timeDiff / (24 * 60 * 60 * 1000))+1;
+
+    // Days 수 계산
+    const clientsCount = daysDiff;
+
+    // Clients Counter 업데이트
+    document.getElementById('clientsCounter').setAttribute('data-purecounter-end', clientsCount);
+  }
+
+  // 1일마다 updateClientsCounter 함수를 호출하는 인터벌 설정 (86400000 밀리초 = 1일)
+  setInterval(updateClientsCounter, 86400000);
+
+  // 페이지 로드 시에도 초기값 설정
+  updateClientsCounter();
+</script>

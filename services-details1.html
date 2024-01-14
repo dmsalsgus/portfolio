@@ -27,6 +27,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+
   <!-- =======================================================
   * Template Name: Kelly
   * Updated: Sep 18 2023 with Bootstrap v5.3.2
@@ -51,7 +54,12 @@
   section{
     padding: 20px 0;
   }
-
+  .fa-chevron-down{
+    display: block;
+    text-align: center;
+    font-size: x-large;
+    color: darkgray;
+  }
 </style>
 
 <body>
@@ -73,47 +81,55 @@
                 </div> -->
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-studio/detail1.jpg">
+                  <img src="assets/img/portfolio/portfolio-details/dd-land/detail1.jpg">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-studio/detail2.jpg">
+                  <img src="assets/img/portfolio/portfolio-details/dd-land/detail2.jpg">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-studio/detail3.jpg">
+                  <img src="assets/img/portfolio/portfolio-details/dd-land/detail3.jpg">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-studio/detail4.jpg">
+                  <img src="assets/img/portfolio/portfolio-details/dd-land/detail4.jpg">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-studio/detail5.jpg">
+                  <img src="assets/img/portfolio/portfolio-details/dd-land/detail5.jpg">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-studio/detail6.jpg">
+                  <img src="assets/img/portfolio/portfolio-details/dd-land/detail6.jpg">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-studio/detail7.jpg">
+                  <img src="assets/img/portfolio/portfolio-details/dd-land/detail7.jpg">
+                </div>
+
+                <!-- <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-details/dd-land/detail8.jpg">
+                </div> -->
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-details/dd-land/detail9.jpg">
+                </div>
+
+                <!-- <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-details/dd-land/detail10.jpg">
+                </div> -->
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-details/dd-land/detail11.jpg">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-studio/detail8.jpg">
+                  <img src="assets/img/portfolio/portfolio-details/dd-land/detail12.jpg">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-studio/detail9.jpg">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-studio/detail10.jpg">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-studio/detail11.jpg">
+                  <img src="assets/img/portfolio/portfolio-details/dd-land/detail13.jpg">
                 </div>
 
               </div>
@@ -125,36 +141,38 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Project Name</strong> : DD-Studio</li>
-                <li><strong>Category</strong> : Servlet</li>
-                <li><strong>Language</strong> : Java, Oracle, HTML, CSS, JavaScript, JSP, Servlet</li>
-                <li><strong>Tool</strong> : Eclipse, SQL Developer, eXERD, Sourcetree, Git</li>
-                <li><strong>Project date</strong> : 2023.10.30 ~ 2023.11.17</li>
-                <li><strong>Github</strong> : <a href="https://github.com/dmsalsgus/DD-Studio" target="_blank">DD-Studio</a></li>
+                <li><strong>Project Name</strong> : DD-Land</li>
+                <li><strong>Category</strong> : Spring</li>
+                <li><strong>Language</strong> : Java, Oracle, HTML, CSS, JavaScript, JSP</li>
+                <li><strong>Tool</strong> : Eclipse, SQL Developer, eXERD, Sourcetree</li>
+                <li><strong>Project date</strong> : 2023.12.18 ~ 2023.12.27</li>
+                <li><strong>Github</strong> : <a href="https://github.com/dmsalsgus/dd-land" target="_blank">DD-Land</a></li>
               </ul>
             </div>
             <div class="portfolio-description">
               <h2>구현목표</h2>
               <p>
                 <ul>
-                    <li>Open API 활용</li>
-                    <li>놀이공원을 방문하는 회원들을 위한 추천, 구매 등 <br>다양한 기능을 제공</li>
-                    <li>이용자의 편의성을 위한 페이지 구성</li>
+                    <li>Open API 및 Socket 활용</li>
+                    <li>태그 및 모달을 활용한 사용자 친화적인 디자인</li>
+                    <li>Spring Security 활용</li>
                 </ul>
               </p>
               <h2>기능구현</h2>
               <p>
                 <ul>
-                  <li>회원의 파크 이용안내, 편의시설, 오시는 길, 가이드맵</li>
-                  <li>어트랙션 운휴 관리 CRUD</li>
-                  <li>카테고리 관리 CRUD</li>
-                  <li>해시태그 관리 CRUD</li>
+                  <li>파크 이용안내, 오시는 길, 가이드맵 지도 API</li>
+                  <li>편의시설 목록보기, 상세보기, 지도 API, 편의시설 CRUD</li>
+                  <li>오픈 채팅 기능</li>
+                  <li>어트랙션, 기프트샵, 식당, 영화관 운휴 CRUD</li>
               </ul>
               </p>
             </div>
           </div>
 
         </div>
+
+        <i class="fa-solid fa-chevron-down"></i>
 
         <div class="portfolio-description">
           <h2>프로젝트 후기</h2>

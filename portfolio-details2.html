@@ -51,7 +51,21 @@
   section{
     padding: 20px 0;
   }
-
+  th{
+    border-right: 1px solid #CCC;
+  }
+  tr{
+    border-bottom: 1px solid #CCC;
+  }
+  @font-face {
+    font-family: 'SOYOMapleBoldTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+body, h2{
+  font-family: 'SOYOMapleBoldTTF';
+}
 </style>
 
 <body>
@@ -67,10 +81,6 @@
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
-
-                <!-- <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-land/detail0.jpg">
-                </div> -->
 
                 <div class="swiper-slide">
                   <img src="assets/img/portfolio/portfolio-details/dd-studio/detail1.jpg">
@@ -130,31 +140,79 @@
                 <li><strong>Language</strong> : Java, Oracle, HTML, CSS, JavaScript, JSP, Servlet</li>
                 <li><strong>Tool</strong> : Eclipse, SQL Developer, eXERD, Sourcetree, Git</li>
                 <li><strong>Project date</strong> : 2023.10.30 ~ 2023.11.17</li>
-                <li><strong>Github</strong> : <a href="https://github.com/dmsalsgus/DD-Studio" target="_blank">DD-Studio</a></li>
+                <li><strong>Github</strong> : <a href="https://github.com/dmsalsgus/DD-Studio" target="_blank">DD-Studio</a><span style="color: #CCC;">※ Github로 이동합니다. ※</span></li>
               </ul>
             </div>
-            <div class="portfolio-description">
-              <h2>구현목표</h2>
-              <p>
-                <ul>
-                    <li>Open API 활용</li>
-                    <li>놀이공원을 방문하는 회원들을 위한 추천, 구매 등 <br>다양한 기능을 제공</li>
-                    <li>이용자의 편의성을 위한 페이지 구성</li>
-                </ul>
-              </p>
-              <h2>기능구현</h2>
-              <p>
-                <ul>
-                  <li>회원의 파크 이용안내, 편의시설, 오시는 길, 가이드맵</li>
-                  <li>어트랙션 운휴 관리 CRUD</li>
-                  <li>카테고리 관리 CRUD</li>
-                  <li>해시태그 관리 CRUD</li>
-              </ul>
-              </p>
+            <div class="portfolio-description" style="text-align: center;
+            padding-top: 50px;
+            color: cadetblue;">
+              <h2>" 롯데월드를 벤치마킹하여 구현한<br>놀이공원 홈페이지입니다. "</h2>
             </div>
           </div>
 
         </div>
+
+        <hr>
+
+        <div class="portfolio-description" style="width: 100%; display: flex;">
+          <div style="display: inline-block; width: 50%;">
+          <h2>기획배경</h2>
+          <p>
+            <ul>
+                <li>사용자의 선호도와 취향을 파악하여 여러가지 서비스를 추천</li>
+                <li>놀이기구 예약을 통한 사용자의 편의성 증가</li>
+                <li>놀이공원에 방문하지 않아도 기념품 구매가 가능한 서비스</li>
+            </ul>
+          </p>
+        </div>
+        <div style="display: inline-block; width: 50%;">
+          <h2>기능구현</h2>
+          <p>
+            <ul>
+              <li>파크 이용안내, 오시는 길, 가이드맵 지도 API</li>
+              <li>편의시설 위치보기, 지도 API</li>
+              <li>어트랙션, 기프트샵, 식당, 영화관 운휴 CRUD</li>
+              <li>카테고리 및 해시태그 관리</li>
+          </ul>
+          </p>
+        </div>
+        </div>
+
+        <hr>
+
+        <div class="portfolio-description" style="width: 100%;">
+          <h2 style="text-align: left;">페이지 상세설명</h2>
+          <br>
+          <table style="width: 100%; text-align: center;">
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/dd-studio/detail1.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                이용가이드의 <span style="color: crimson;">'파크이용안내'</span> 페이지입니다.<br>
+                <br>
+                파크 이용안내에 들어가시면 놀이공원을 이용 시에<br>주의해야 할 사항들이 적혀 있습니다.
+                </nr>
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/dd-studio/detail2.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                이용가이드의 <span style="color: crimson;">'편의시설'</span> 페이지입니다.<br><br>
+                편의시설 페이지에 들어가시면 놀이공원에서 이용하실 수 있는 모든 편의시설을 볼 수 있는 목록들을 보실 수<br> 있습니다.
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/dd-studio/detail4.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                이용가이드의 <span style="color: crimson;">'편의시설 상세'</span> 페이지입니다.<br>
+                <br>
+                편의시설 상세 페이지는 편의시설의 간단한 정보와<br>운영시간 및 전화번호를 확인하실 수 있습니다.
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <hr>
+
 
         <div class="portfolio-description">
           <h2>프로젝트 후기</h2>

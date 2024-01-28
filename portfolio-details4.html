@@ -52,6 +52,24 @@
     padding: 20px 0;
   }
 
+  th{
+    border-right: 1px solid #CCC;
+    margin: 5px 0;
+  }
+  tr{
+    border-bottom: 1px solid #CCC;
+  }
+
+  @font-face {
+    font-family: 'SOYOMapleBoldTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+body, h2{
+  font-family: 'SOYOMapleBoldTTF';
+}
+
 </style>
 
 <body>
@@ -67,10 +85,6 @@
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
-
-                <!-- <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-land/detail0.jpg">
-                </div> -->
 
                 <div class="swiper-slide">
                   <img src="assets/img/portfolio/portfolio-details/revolving-menu/detail1.jpg">
@@ -137,37 +151,150 @@
                 <li><strong>Category</strong> : Java</li>
                 <li><strong>Language</strong> : Java</li>
                 <li><strong>Tool</strong> : Eclipse, Sourcetree, Git, Google Drive</li>
-                <li><strong>Project date</strong> : 2023.09.21 ~ 2023.10.06</li>
-                <li><strong>Github</strong> : <a href="https://github.com/dmsalsgus/revolving-menu" target="_blank">Revolving-Menu</a></li>
+                <li><strong>Project date</strong> : 2023.09.06 ~ 2023.09.25</li>
+                <li><strong>Github</strong> : <a href="https://github.com/dmsalsgus/revolving-menu" target="_blank">Revolving-Menu</a> <span style="color: #CCC;">※ Github로 이동합니다. ※</span></li>
               </ul>
             </div>
-            <div class="portfolio-description">
-              <h2>구현목표</h2>
-              <p>
-                <ul>
-                    <li>메뉴를 랜덤하게 추천한다.</li>
-                    <li>카테고리 추천과 계절에 따른 메뉴추천을 구현한다.</li>
-                </ul>
-              </p>
-              <h2>기능구현</h2>
-              <p>
-                <ul>
-                  <li>관리자 : 카테고리 추가 및 삭제 기능</li>
-                  <li>관리자 : 사용자의 후기 내역 조회 및 삭제 기능 <br>
-                    &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;(조회 기준 : 별점순, 매장명 검색, 회원번호 검색)</li>
-                    <li>더미 데이터 생성</li>
-              </ul>
-              </p>
+            <div class="portfolio-description" style="text-align: center;
+            padding-top: 80px;
+            color: cadetblue;">
+              <h2>" 강남구 식당 API를 가져와서 <br>데일리 식사메뉴를 랜덤으로 추천하는<br> 프로그램입니다. "</h2>
             </div>
           </div>
 
         </div>
 
-        <div class="portfolio-description">
-          <h2>프로젝트 후기</h2>
-          <p style="width: 1140px;">
-            열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다 
+        <hr>
+
+        <div class="portfolio-description" style="width: 100%; display: flex;">
+          <div style="display: inline-block; width: 50%;">
+          <h2>구현목표</h2>
+          <p>
+            <ul>
+              <li>다양한 메뉴를 랜덤하게 추천한다.</li>
+              <li>카테고리 추천과 계절에 따른 메뉴추천을 구현한다.</li>
+              <li>사용자의 매장 및 음식 평가 열람 기능을 제공한다</li>
+            </ul>
           </p>
+        </div>
+        <div style="display: inline-block; width: 50%;">
+          <h2>기능구현</h2>
+          <p>
+            <ul>
+              <li>관리자 : 카테고리 추가 및 삭제 기능</li>
+              <li>관리자 : 사용자의 후기 내역 조회 및 삭제 기능 <br>
+                &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;(조회 기준 : 별점순, 매장명 검색, 회원번호 검색)</li>
+                <li>더미 데이터 생성</li>
+          </ul>
+          </p>
+        </div>
+        </div>
+
+        <hr>
+
+        <div class="portfolio-description" style="width: 100%;">
+          <h2 style="text-align: left;">페이지 상세설명</h2>
+          <br>
+          <table style="width: 100%; text-align: center;">
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/revolving-menu/detail3.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                관리자 파트의 <span style="color: crimson;">'카테고리 관리'</span> 파트입니다.<br>
+                <br>
+                카테고리는 추가 기능과 삭제 기능 중에 선택할 수 있습니다.
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/revolving-menu/detail4.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                관리자 파트의 <span style="color: crimson;">'카테고리 추가'</span> 파트입니다.<br>
+                <br>
+                기존 리스트를 확인 후, 번호와 카테고리명을 <br>추가할 수 있습니다.<br>
+                번호와 카테고리 둘 중 하나라도 쓰지 않으면 안되고, <br>둘 중 하나라도 중복이 존재하면 추가할 수 없습니다.
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/revolving-menu/detail6.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                관리자 파트의 <span style="color: crimson;">'카테고리 삭제'</span> 파트입니다.<br>
+                <br>
+                기존 리스트를 확인 후, 번호로 카테고리 삭제가 가능합니다.<br>
+                번호로만 삭제가 가능하며 존재하지 않는 번호 또는<br>카테고리명으로는 삭제가 불가능합니다.<br>삭제를 하기전에 한번 더 확인하는 질문을 거친 후에 <br>삭제합니다. 
+               
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/revolving-menu/detail7.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                관리자 파트의 <span style="color: crimson;">'매장 및 음식 후기관리'</span> 파트입니다.<br>
+                <br>
+                사용자가 남긴 후기들을 조회하거나 삭제할 수 있습니다.
+                <br>조회는 '별점 낮은순', '별점 높은순', '매장명 검색',<br> '회원번호 검색' 중에 선택하여 조회하실 수 있습니다.
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/revolving-menu/detail9.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                관리자 파트의 <span style="color: crimson;">'후기 조회 중 별점순'</span> 파트입니다.<br>
+                <br>
+                별점 높은 순으로 조회를 선택하면 평점이 높은순으로 <br>정렬이 되어 출력됩니다. <br>선택지에 없는 번호를 선택하면 다시 선택하라는 <br>안내 메세지가 뜨게 됩니다.<br> 0번을 입력하면 다시 후기조회 또는 삭제를 선택하는 <br>파트로 돌아갑니다.
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/revolving-menu/detail10.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                관리자 파트의 <span style="color: crimson;">'후기 조회 중 매장명 검색'</span> 파트입니다.<br>
+                <br>
+                검색어를 입력하면 해당 검색어가 포함되어 있는 매장명이 전부 출력됩니다.<br>정렬은 평점이 높은순으로 정렬되어 출력됩니다.
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/revolving-menu/detail11.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                관리자 파트의 <span style="color: crimson;">'후기 조회 중 회원번호 검색'</span> 파트입니다.<br>
+                <br>
+                확인하고 싶은 회원의 번호를 검색하면 해당 회원이 <br>남긴 후기를 조회할 수 있습니다. <br>일치하는 회원번호가 없다면 재검색을 하도록 합니다.
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/revolving-menu/detail13.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                관리자 파트의 <span style="color: crimson;">'후기 삭제'</span> 파트입니다.<br>
+                <br>
+                먼저 회원번호를 검색 후 회원이 남긴 후기를 확인합니다.<br>
+                회원이 남긴 여러 후기들 중 삭제할 후기의 ID를 입력하면 확인 메세지를 통해 한번 더 확인 후 삭제합니다.<br>회원번호 또는 후기ID가 일치하지 않는다면 <br>재검색을 하도록 합니다.
+              </td>
+            </tr>
+          </table>
+        </div>
+        
+        <hr>
+
+        <div class="portfolio-description" style="width: 100%; display: flex;">
+          <h2 style="text-align: left; width:170px;">산출물</h2>
+          <div style="display: inline-block; width:50%">
+          <ul>
+            <li><a href="https://drive.google.com/file/d/144Ran_QS7NFJ7vKoX3wneM4S2MSV-kYW/view?usp=drive_link" target="_blank">기획서 (2장)</a></li>
+            <li><a href="https://docs.google.com/document/d/1-MTrBgtMFA3crE47Vu3LtZzvdCIuA5Kfn6x4M4DY-8Y/edit?usp=drive_link" target="_blank">요구분석서 (10장)</a></li>
+            </ul>
+            </div>
+            <div style="display: inline-block; width:50%">
+              <ul>
+                <li><a href="https://drive.google.com/file/d/1gYmYB4No5dxz-4Dg5MzHGCfK-95kavlG/view?usp=drive_link" target="_blank">순서도</a></li>
+                <li><a href="https://docs.google.com/document/d/14ZK6LKMETdyToW-B9XOaBnshfTIcdkH2NVLxfRS2Lsc/edit?usp=drive_link" target="_blank">기능명세서(6장)</a></li>
+            </ul>
+            </div>
+        </div>
+        <div style="text-align: center; color: #CCC;">※ 상세보기는 목록을 눌러주세요. ※</div>
+       
+        <hr>
+
+        <div class="portfolio-description" style="width: 100%;">
+          <h2>프로젝트 후기</h2>
+          <div style="width: 100%; font-size: 20px;">
+            <li>앞서 했던 Daitso java console 프로젝트에서는 사용자의 입장에서 구현하였기에 접근이 어렵지 않았는데, <br>처음으로 관리자의 입장으로 접근해보니 어떤식으로 구현할지에 대해 고민해보는 시간이 있었습니다.</li><br>
+            <li>수업시간에 배웠던 ArrayList, 향상된 for문, Sort, Lambda를 직접 적용함으로써 좀 더 익히고 학습할 수 있었던 <br>프로젝트였습니다.</li>
+          </div>
         </div>
 
       </div>

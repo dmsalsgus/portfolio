@@ -27,6 +27,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+
   <!-- =======================================================
   * Template Name: Kelly
   * Updated: Sep 18 2023 with Bootstrap v5.3.2
@@ -52,6 +55,22 @@
     padding: 20px 0;
   }
 
+  th{
+    border-right: 1px solid #CCC;
+  }
+  tr{
+    border-bottom: 1px solid #CCC;
+  }
+
+  @font-face {
+    font-family: 'SOYOMapleBoldTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+body, h2{
+  font-family: 'SOYOMapleBoldTTF';
+}
 </style>
 
 <body>
@@ -117,33 +136,126 @@
                 <li><strong>Language</strong> : HTML, CSS, JavaScript</li>
                 <li><strong>Tool</strong> : Eclipse, Git</li>
                 <li><strong>Project date</strong> : 2017.11.11 ~ 2017.12.06</li>
-                <li><strong>Github</strong> : <a href="https://github.com/dmsalsgus/Marvel" target="_blank">Marvel</a></li>
+                <li><strong>Github</strong> : <a href="https://github.com/dmsalsgus/Marvel" target="_blank">Marvel</a> <span style="color: #CCC;">※ Github로 이동합니다. ※</span></li>
               </ul>
             </div>
-            <div class="portfolio-description">
-              <h2>구현목표</h2>
-              <p>
-                <ul>
-                    <li>페이지 구조에 대해 공부하여 알맞은 태그를 사용해<br> 페이지를 구현하기</li>
-                    <li>페이지 연결 구조에 대해 이해 및 적용하기</li>
-                </ul>
-              </p>
-              <h2>기능구현</h2>
-              <p>
-                <ul>
-                  <li>홈페이지 링크 연결 및 video 태그 사용</li>
-              </ul>
-              </p>
+            <div class="portfolio-description" style="text-align: center;
+            padding-top: 80px;
+            color: cadetblue;">
+              <h2>" 마블에 대한 전반적인 소개와 <br>영화를 소개하는 페이지입니다. "</h2>
             </div>
           </div>
 
         </div>
 
-        <div class="portfolio-description">
+        <hr>
+       
+        <div class="portfolio-description" style="width: 100%; display: flex;">
+          <div style="display: inline-block; width: 50%;">
+            <h2>구현목표</h2>
+            <p>
+              <ul>
+                  <li>페이지 구조에 대해 공부하여 알맞은 태그를 사용해 페이지를 구현하기</li>
+                  <li>페이지 연결 구조에 대해 이해 및 적용하기</li>
+              </ul>
+            </p>
+        </div>
+        <div style="display: inline-block; width: 50%;">
+          <h2>기능구현</h2>
+              <p>
+                <ul>
+                  <li>홈페이지 링크 연결 및 video 태그 사용</li>
+              </ul>
+              </p>
+        </div>
+        </div>
+
+        <hr>
+
+        <div class="portfolio-description" style="width: 100%;">
+          <h2 style="text-align: left;">페이지 상세설명</h2>
+          <br>
+          <table style="width: 100%; text-align: center;">
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/marvel/detail0.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                Marvel의 <span style="color: crimson;">'intro'</span> 페이지입니다.<br>
+                <br>
+                제일 최근에 개봉한 영화의 예고편을 볼 수 있게<br>올려놨습니다.
+                <br>밑에 main 버튼을 누르면 main 페이지로 이동합니다.
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/marvel/detail1.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                Marvel의 <span style="color: crimson;">'main'</span> 페이지입니다.<br>
+                <br>
+                배경음악을 자동실행으로 구현하였으며, 밑에 큰 사진들은 각각 메뉴의 탭으로 마우스를 올리면 이미지가 약간씩 <br>커지는 효과를 주었습니다.
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/marvel/detail3.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                Marvel의 <span style="color: crimson;">'개념 및 설명'</span> 페이지입니다.<br>
+                <br>
+                마블 세계관에 대한 간단한 소개를 적은 페이지입니다.<br>
+                맨 밑에 Marvel Page를 누르시면 마블 회사<br> 홈페이지로 연결됩니다.<br>
+                모든 페이지의 사이드바에는 상품을 살 수 있는 굿즈를 <br>고정시켜 접근할 수 있도록 했습니다. 
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/marvel/detail4.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                Marvel의 <span style="color: crimson;">'intro'</span> 페이지입니다.<br>
+                <br>
+                
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/marvel/detail5.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                Marvel의 <span style="color: crimson;">'캐릭터 소개'</span> 페이지입니다.<br>
+                <br>
+                포스터들을 하나씩 클릭하면 해당 영화의 각 주요 인물들의 간단한 소개가 출력됩니다.
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/marvel/detail6.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                Marvel의 <span style="color: crimson;">'명장면'</span> 페이지입니다.<br>
+                <br>
+                각 영화의 제목을 클릭하면 해당 영화의 예고편을 <br>시청할 수 있습니다.
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/marvel/detail7.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                Marvel의 <span style="color: crimson;">'댓글'</span> 페이지입니다.<br>
+                <br>
+                각 영화를 선택하면 해당 영화에 대한 후기 및 평점을<br> 조회할 수 있습니다.
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <hr>
+
+        <div class="portfolio-description" style="width: 100%; display: flex;">
+          <h2 style="text-align: left; width:170px;">산출물</h2>
+          <div style="display: inline-block; width:100%;">
+            <li style="margin-left: 350px;"><a href="https://1drv.ms/t/s!AoLUmWv6XBZc9jlcHRrapN_0UaFy?e=tFlOoJ" target="_blank">기획서 (6장)</a></li>
+          </div>
+        </div>
+        <div style="text-align: center; color: #CCC;">※ 상세보기는 목록을 눌러주세요. ※</div>
+       
+        <hr>
+
+        <div class="portfolio-description" style="width: 100%;">
           <h2>프로젝트 후기</h2>
-          <p style="width: 1140px;">
-            열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다 
-          </p>
+          <div style="width: 100%; font-size: 20px;">
+            <li style="margin-bottom: 25px;">모든 페이지가 정적 페이지기는 하지만 처음 기획하고 만들었던 프로젝트였던것만큼 기획대로 구현이 되어 뿌듯했습니다. <br>html, css에 대해 더 집중하고 익히고 배울 수 있었던 시간이었습니다.</li>
+            <li>블럭 태그나 인라인 태그의 차이점에 대해 잘 알 수 있었고, 그 외의 태그들 또한 어떤 상황에서 올바르게 쓰고, 어떻게 해야 <br>css를 올바르게 적용시킬 수 있는지에 대해 배울 수 있었습니다.</li> 
+          </div>
         </div>
 
       </div>

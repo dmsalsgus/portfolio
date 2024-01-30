@@ -27,6 +27,10 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+
+
   <!-- =======================================================
   * Template Name: Kelly
   * Updated: Sep 18 2023 with Bootstrap v5.3.2
@@ -52,6 +56,24 @@
     padding: 20px 0;
   }
 
+
+  th{
+    border-right: 1px solid #CCC;
+    margin: 5px 0;
+  }
+  tr{
+    border-bottom: 1px solid #CCC;
+  }
+
+  @font-face {
+    font-family: 'SOYOMapleBoldTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+body, h2{
+  font-family: 'SOYOMapleBoldTTF';
+}
 </style>
 
 <body>
@@ -67,10 +89,6 @@
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
-
-                <!-- <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-land/detail0.jpg">
-                </div> -->
 
                 <div class="swiper-slide">
                   <img src="assets/img/portfolio/portfolio-details/laptop-recommendation/detail1.jpg">
@@ -132,31 +150,134 @@
                 <li><strong>Project Name</strong> : Laptop-Recommendation</li>
                 <li><strong>Category</strong> : DataMining</li>
                 <li><strong>Language</strong> : C, Github</li>
-                <li><strong>Tool</strong> : Visual Studio, Excel, Git</li>
+                <li><strong>Tool</strong> : Visual Studio, Excel, Git, Weka</li>
                 <li><strong>Project date</strong> : 2020.11.30 ~ 2020.12.09</li>
-                <li><strong>Github</strong> : <a href="https://github.com/dmsalsgus/Laptop-Recommendation" target="_blank">Laptop-Recommendation</a></li>
+                <li><strong>Github</strong> : <a href="https://github.com/dmsalsgus/Laptop-Recommendation" target="_blank">Laptop-Recommendation</a> <span style="color: #CCC;"><br>※ Github로 이동합니다. ※</span></li>
               </ul>
             </div>
-            <div class="portfolio-description">
-              <h2>개요</h2>
-              <p>
-                <ul>
-                  <li>회원의 파크 이용안내, 편의시설, 오시는 길, 가이드맵</li>
-                  <li>어트랙션 운휴 관리 CRUD</li>
-                  <li>카테고리 관리 CRUD</li>
-                  <li>해시태그 관리 CRUD</li>
-              </ul>
-              </p>
+            <div class="portfolio-description" style="text-align: center;
+            padding-top: 60px;
+            color: cadetblue;">
+              <h2>" 데이터에 따른 노트북 추천하기 "</h2>
             </div>
           </div>
 
         </div>
 
-        <div class="portfolio-description">
-          <h2>프로젝트 후기</h2>
-          <p style="width: 1140px;">
-            열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다 
+        <hr>
+
+        <div class="portfolio-description" style="width: 100%; display: flex;">
+          <div style="display: inline-block; width: 50%;">
+          <h2>기획배경</h2>
+          <p>
+            <ul>
+                <li>자신에게 어떤 노트북이 맞는지, 어떤 것을 좀 더 유용하게 <br>사용할 수 있을지를 알아볼 수 있다.</li>
+            </ul>
           </p>
+        </div>
+        <div style="display: inline-block; width: 50%;">
+          <h2>기능구현</h2>
+          <p>
+            <ul>
+              <li>Bernoulli Distribution 알고리즘 작성</li>
+              <li>1 Rule 알고리즘 작성</li>
+              <li>Decision Tree 알고리즘 작성</li>
+          </ul>
+          </p>
+        </div>
+        </div>
+
+        <hr>
+
+        <div class="portfolio-description" style="width: 100%;">
+          <h2 style="text-align: left;">페이지 상세설명</h2>
+          <br>
+          <table style="width: 100%; text-align: center;">
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/laptop-recommendation/detail1.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                <span style="color: crimson;">'Attributes & Class'</span><br>
+                <br>
+                Class와 Class를 구분 지어줄 속성들은 임의로 지정한다.<br>
+                데이터 수집은 구글 설문조사 폼으로 수집하며, <br>수집된 데이터는 .csv파일로 저장한다.
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/laptop-recommendation/detail3.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                <span style="color: crimson;">'1 Rule'</span><br>
+                <span style="color: crimson;">1 Rule</span>은 특정한 하나의 속성을 이용하여 <br>전체 training data set을 분류하는 방법.<br><br>
+                여기서 기준이 되는 속성은 <span style="color: crimson;">'무게'</span>입니다. <br>
+                가장 높은 정확도를 가질때는 instances가 242개중 <br>171개일때, 55.6%이고, 가장 낮은 정확도를 가질 때는 <br>24개일때 29.2%입니다.
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/laptop-recommendation/detail4.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                <span style="color: crimson;">'Decision Tree'</span><br><br>
+                <span style="color: crimson;">Decision Tree</span>는 특정한 속성에 대해 속성과 속성값에 <br>해당하는 instance가 완전히 분리될 때까지 <br>분류하는 방법.<br>(devide-and-conquer방식)<br><br>
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/laptop-recommendation/detail5.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                <span style="color: crimson;">'Decision Tree'</span><br><br>
+                root는 가장 정보 분류 능력이 뛰어난 속성을 <br>root로 지정합니다.(여기서는 <span style="color: crimson;">예산</span>입니다.) <br>
+                가장 높은 정확도를 가질때는 instances가 242개중 <br>122개일때, 77.9%이고, 가장 낮은 정확도를 가질 때는 <br>24개일때 58.3%입니다.
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/laptop-recommendation/detail6.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                <span style="color: crimson;">'Naive Bayes'</span><br>
+               <span style="color: crimson;">Naive Bayes</span>는 데이터의 특징이 모두 독립적이라는 <br>가정하에 확률 계산을 단순화하여 계산하는 <br>조건부 확률 기반의 분류 방법.<br><br>
+                가장 높은 정확도를 가질때는 instances가 242개중 <br>146개일때, 82.2%이고, 가장 낮은 정확도를 가질 때는 <br>24개일때 54.2%입니다.
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/laptop-recommendation/detail8.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                <span style="color: crimson;">'Learning Curve & ANOVA'</span><br><br>
+               Learning Curve와 ANOVA에 따르면, 유의한 차이 값을 가지고 있기 때문에 더 높은 정확도를 제공하는 <br>Naive Bayes 알고리즘을 사용하는 것이 더 유리하다.
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/laptop-recommendation/detail12.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                <span style="color: crimson;">'Bernoulli Distribution'</span><br><br>
+                새로운 instance가 입력되고 원하는 알고리즘을 선택하면
+                Bernoulli Distribution으로 구한 P(확률)에 따라, <br>어떤 노트북을 사면 좋을지에 대한 결과와 분류 정확도가 <br>출력됩니다.
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <hr>
+
+        <div class="portfolio-description" style="width: 100%; display: flex;">
+          <h2 style="text-align: left; width:170px;">산출물</h2>
+          <div style="display: inline-block; width:50%">
+          <ul>
+            <li style="margin-left: 110px;"><a href="https://1drv.ms/t/s!AoLUmWv6XBZc9x9uKZzB3P-gOAPg?e=vwmUBo" target="_blank">보고서 (16장)</a></li>
+          </ul>
+          </div>
+            <div style="display: inline-block; width:50%">
+              <ul>
+            <li style="margin-left: 70px;"><a href="https://1drv.ms/p/s!AoLUmWv6XBZc9niP-7p72eZpVF_X?e=wwt7t3" target="_blank">PPT (15장)</a></li>
+            </ul>
+            </div>
+        </div>
+        <div style="text-align: center; color: #CCC;">※ 상세보기는 목록을 눌러주세요. ※</div>
+
+        <hr>
+
+        <div class="portfolio-description" style="width: 100%;">
+          <h2>프로젝트 후기</h2>
+          <div style="width: 100%; font-size: 20px;">
+            <li>설문 조사지 배포로 데이터 수집부터 weka tool을 사용한  분석까지 처음해 보는 것이 쉽지는 않았지만 팀원들과 함께 함으로써 협업에 대한 중요성을 깨닫을 수 있었습니다.</li>
+            <li>weka라는 tool을 처음 사용해 봤기에 처음에는 어려움도 있었지만, 알고리즘에 따라 데이터를 쉽고 유의미하게 분석해 주었기 때문에 금방 익힐 수 있었습니다.</li>
+            <li>데이터를 분석하고 나누는 방법에 있어 굉장히 다양한 알고리즘들이 존재한다는 것을 깨닫을 수 있었고, 그 알고리즘들을 <br>하나하나씩 적용해 봄에 있어 많은 것을 얻을 수 있었던 프로젝트였습니다.</li>
+          </div>
         </div>
 
       </div>

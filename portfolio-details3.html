@@ -52,6 +52,24 @@
     padding: 20px 0;
   }
 
+  th{
+    border-right: 1px solid #CCC;
+    margin: 5px 0;
+  }
+  tr{
+    border-bottom: 1px solid #CCC;
+  }
+
+  @font-face {
+    font-family: 'SOYOMapleBoldTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+body, h2{
+  font-family: 'SOYOMapleBoldTTF';
+}
+
 </style>
 
 <body>
@@ -68,52 +86,28 @@
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
 
-                <!-- <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-land/detail0.jpg">
-                </div> -->
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-studio/detail1.jpg">
+                  <img src="assets/img/portfolio/portfolio-details/management-system/detail1.jpg">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-studio/detail2.jpg">
+                  <img src="assets/img/portfolio/portfolio-details/management-system/detail2.jpg">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-studio/detail3.jpg">
+                  <img src="assets/img/portfolio/portfolio-details/management-system/detail3.jpg">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-studio/detail4.jpg">
+                  <img src="assets/img/portfolio/portfolio-details/management-system/detail4.jpg">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-studio/detail5.jpg">
+                  <img src="assets/img/portfolio/portfolio-details/management-system/detail5.jpg">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-studio/detail6.jpg">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-studio/detail7.jpg">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-studio/detail8.jpg">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-studio/detail9.jpg">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-studio/detail10.jpg">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details/dd-studio/detail11.jpg">
+                  <img src="assets/img/portfolio/portfolio-details/management-system/detail6.jpg">
                 </div>
 
               </div>
@@ -130,18 +124,33 @@
                 <li><strong>Language</strong> : ANSI-SQL, PL/SQL</li>
                 <li><strong>Tool</strong> : SQL Developer, DBeaver, eXERD, Git, Draw.io</li>
                 <li><strong>Project date</strong> : 2023.09.11 ~ 2023.09.18</li>
-                <li><strong>Github</strong> : <a href="https://github.com/dmsalsgus/DD-Studio" target="_blank">쌍용교육센터 관리 프로그램</a></li>
+                <li><strong>Github</strong> : <a href="https://github.com/dmsalsgus/management_program.git" target="_blank">쌍용교육센터 관리 프로그램</a>
+                <br><span style="color: #CCC;">※ Github로 이동합니다. ※</span></li>
               </ul>
             </div>
-            <div class="portfolio-description">
-              <h2>구현목표</h2>
-              <p>
-                <ul>
-                    <li>쌍용교육센터의 운영을 위한 데이터베이스 구축</li>
-                    <li>기본기능 외에 면접자 명단, 상담일지 등 추가기능을 구현</li>
-                </ul>
-              </p>
-              <h2>기능구현</h2>
+            <div class="portfolio-description"  style="text-align: center;
+            padding-top: 48px;
+            color: cadetblue;">
+              <h2>" 쌍용교육센터 학사관리 시스템을<br> DB로 구축 및 구현한 <br>프로젝트입니다. "</h2>
+            </div>
+          </div>
+
+        </div>
+
+        <hr>
+
+        <div class="portfolio-description" style="width: 100%; display: flex;">
+          <div style="display: inline-block; width: 50%;">
+            <h2>구현목표</h2>
+            <p>
+              <ul>
+                  <li>쌍용교육센터의 운영을 위한 데이터베이스 구축</li>
+                  <li>기본기능 외에 면접자 명단, 상담일지 등 추가기능을 구현</li>
+              </ul>
+            </p>
+        </div>
+        <div style="display: inline-block; width: 50%;">
+          <h2>기능구현</h2>
               <p>
                 <ul>
                   <li>면접 및 지원자 테이블 추가 구현</li>
@@ -149,17 +158,96 @@
                   <li>프로젝트 및 과제 테이블 추가 구현</li>
               </ul>
               </p>
+        </div>
+        </div>
+
+        <hr>
+
+        <div class="portfolio-description" style="width: 100%;">
+          <h2 style="text-align: left;">페이지 상세설명</h2>
+          <br>
+          <table style="width: 100%; text-align: center;">
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/management-system/detail2.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                관리자의 <span style="color: crimson;">'개설과정'</span> 파트입니다.<br>
+                <br>
+                
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/management-system/detail3.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                관리자의 <span style="color: crimson;">'교육생 출결'</span> 파트입니다.<br>
+                <br>
+                
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/management-system/detail4.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                관리자의 <span style="color: crimson;">'교육생 출결'</span> 파트입니다.<br>
+                <br>
+                
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/management-system/detail5.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                관리자의 <span style="color: crimson;">'공지사항'</span> 파트입니다.<br>
+                <br>
+                
+              </td>
+            </tr>
+            <tr>
+              <th style="width: 50%; display: inline-block;"><img src="assets/img/portfolio/portfolio-details/management-system/detail6.jpg" style="width:87%;"></th>
+              <td style="width:50%; display: inline-block; font-size: 22px;">
+                관리자의 <span style="color: crimson;">'개설과목'</span> 파트입니다.<br>
+                <br>
+                
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <hr>
+
+        <div class="portfolio-description" style="width: 100%; display: flex;">
+          <h2 style="text-align: left; width:170px;">산출물</h2>
+          <div style="display: inline-block; width:30%">
+          <ul>
+            <li><a href="https://docs.google.com/document/d/1WyHa8WfFaWLGW3SgUwNmOA0upuFhasmM/edit?usp=drive_link&ouid=105321712345177765420&rtpof=true&sd=true" target="_blank">요구분석서(21장)</a></li>
+            <li><a href="https://drive.google.com/file/d/1uLx-YTYE5JALnP3Aw3QsPYI4k7bTdcbz/view?usp=drive_link" target="_blank">순서도</a></li>
+            <li><a href="https://drive.google.com/file/d/1ziwHl4dLMMfkZKFEPX2Rnvkh-JDqFiJj/view?usp=drive_link" target="_blank">ERD</a></li>
+            </ul>
             </div>
-          </div>
-
+            <div style="display: inline-block; width:30%">
+              <ul>
+                <li><a href="https://docs.google.com/document/d/1rYnwV9XVCHpWXda-0dHkgPWzDtxQcnbZ/edit?usp=drive_link&ouid=105321712345177765420&rtpof=true&sd=true" target="_blank">테이블 정의서(DDL) (32장)</a></li>
+                <li><a href="https://docs.google.com/document/d/1EDHXhQOVEdQzwMIpVXaRzz992QW3Mwr7/edit?usp=drive_link&ouid=105321712345177765420&rtpof=true&sd=true" target="_blank">데이터 정의서1(DML)</a></li>
+                <li><a href="https://docs.google.com/document/d/1UmLReTQ1Qt6Xc6gTHeyB8wugS6wCb3MY/edit?usp=drive_link&ouid=105321712345177765420&rtpof=true&sd=true" target="_blank">데이터 정의서2(DML)</a></li>
+            </ul>
+            </div>
+            <div style="display: inline-block; width:30%">
+              <ul>
+                <li><a href="https://docs.google.com/document/d/14ZK6LKMETdyToW-B9XOaBnshfTIcdkH2NVLxfRS2Lsc/edit?usp=drive_link" target="_blank">쿼리문 정의서(ANSI-SQL)</a></li>
+                <li><a href="https://docs.google.com/document/d/14ZK6LKMETdyToW-B9XOaBnshfTIcdkH2NVLxfRS2Lsc/edit?usp=drive_link" target="_blank">오브젝트 스크립트(PL/SQL)</a></li>
+                <li><a href="https://docs.google.com/document/d/14ZK6LKMETdyToW-B9XOaBnshfTIcdkH2NVLxfRS2Lsc/edit?usp=drive_link" target="_blank">PPT</a></li>
+                <li><a href="https://docs.google.com/document/d/14ZK6LKMETdyToW-B9XOaBnshfTIcdkH2NVLxfRS2Lsc/edit?usp=drive_link" target="_blank">최종 요약본</a></li>
+              </ul>
+            </div>
         </div>
+        <div style="text-align: center; color: #CCC;">※ 상세보기는 목록을 눌러주세요. ※</div>
+       
+        <hr>
 
-        <div class="portfolio-description">
+        <!-- <div class="portfolio-description" style="width: 100%;">
           <h2>프로젝트 후기</h2>
-          <p style="width: 1140px;">
-            열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다열심히 굿굿 아주 좋아요 짱이다 
-          </p>
-        </div>
+          <div style="width: 100%; font-size: 20px;">
+            <li></li><br>
+            <li></li>
+          </div>
+        </div> -->
 
       </div>
     </section><!-- End Portfolio Details Section -->
